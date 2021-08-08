@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Modal } from "../../components/Modal/Modal";
+import { TournamentForm } from "../../components/TournamentForm.tsx/TournamentForm";
 
 export const Home = () => {
   const [show, setShow] = useState(false);
@@ -14,7 +15,7 @@ export const Home = () => {
         onClose={() => setShow(false)}
         show={show}
       >
-        <p>This is my Modal Body</p>
+        <TournamentForm />
       </Modal>
     </div>
   );
